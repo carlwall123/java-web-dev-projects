@@ -1,8 +1,34 @@
 package org.launchcode;
 
-public class CD {
-    // TODO: Implement your custom interface.
+public class CD extends BaseDisc implements OpticalDisc{
+    private final int spinSpeed;
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    public CD(String name, int capacity){
+        super(name,capacity,"CD");
+        this.spinSpeed = 200;
+    }
+    @Override
+    public void spinDisc(){
+        System.out.println("A CD spins at a rate of " + spinSpeed + " - 500 rpm");
+    }
+
+    @Override
+    public void storeData() {
+
+    }
+
+    @Override
+    public void writeData() {
+
+    }
+
+    @Override
+    public void readData() {
+
+    }
+
+    @Override
+    public void reportInformation() {
+
+    }
 }
