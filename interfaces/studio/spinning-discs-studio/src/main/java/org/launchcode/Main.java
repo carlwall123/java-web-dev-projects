@@ -2,9 +2,19 @@ package org.launchcode;
 
 public class Main {
     public static void main(String[] args) {
+        CD myCd = new CD("My CD", 700);
+        DVD myDvd = new DVD("My DVD", 4700);
 
-        // TODO: Declare and initialize a CD and a DVD object.
+        myCd.spinDisc();
+        myCd.storeData();
+        myCd.writeData();
+        myCd.readData();
+        myCd.reportInformation();
 
-        // TODO: Call each CD and DVD method to verify that they work as expected.
+        myDvd.spinDisc();
+        myDvd.storeData();
+        myDvd.writeData();
+        myDvd.readData();
+        myDvd.reportInformation();
     }
 }
